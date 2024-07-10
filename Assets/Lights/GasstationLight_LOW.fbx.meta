@@ -3,7 +3,12 @@ guid: 3ddbd71855c9f40c4b2b0d2c21b7cfcd
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GasstationLight_MTL
+    second: {fileID: 2100000, guid: 581fc08c700034ea899b701ccb72cd95, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
