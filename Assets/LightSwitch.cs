@@ -9,22 +9,51 @@ public class LightSwitch : MonoBehaviour
     public bool toggle;
     public AudioSource switchSound;
 
+    void Start(){
+
+        lightOn.SetActive(false);
+                    lightOff.SetActive(true);
+                    switchOn.SetActive(false);
+                    switchOff.SetActive(true);
+    }
 
     void OnTriggerEnter(Collider other){
 
 
+
+                    if(toggle == true)
+                {
+                    lightOn.SetActive(true);
+                    lightOff.SetActive(false);
+                    switchOn.SetActive(true);
+                    switchOff.SetActive(false);
+                    //switchSound.Play();
+                }
+                if (toggle == false)
+                {
+                    lightOn.SetActive(false);
+                    lightOff.SetActive(true);
+                    switchOn.SetActive(false);
+                    switchOff.SetActive(true);
+                    //switchSound.Play();
+                }
+
+                toggle = !toggle;
+
+
+
         Debug.Log("Enter");
     }
-
+/*
     void OnTriggerStay(Collider other)
     {
-
+             Debug.Log("STAY");
       
 
         if (other.CompareTag("Player"))
         {
 
-              
+               Debug.Log("PLAYER");
 
             //intIcon.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
@@ -48,7 +77,7 @@ public class LightSwitch : MonoBehaviour
                 }
             }
         }
-    }
+    }*/
     void OnTriggerExit(Collider other)
     {
 

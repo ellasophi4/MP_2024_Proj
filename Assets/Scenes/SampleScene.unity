@@ -304,7 +304,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c8c22c679ac4a59a8d343e22f309c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intIcon: {fileID: 0}
   lightOn: {fileID: 451755436}
   lightOff: {fileID: 1359893627}
   switchOn: {fileID: 454404406}
@@ -1515,7 +1514,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c8c22c679ac4a59a8d343e22f309c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intIcon: {fileID: 0}
   lightOn: {fileID: 451755436}
   lightOff: {fileID: 1359893627}
   switchOn: {fileID: 454404406}
@@ -2507,11 +2505,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85c8c22c679ac4a59a8d343e22f309c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intIcon: {fileID: 0}
-  lightOn: {fileID: 0}
-  lightOff: {fileID: 0}
-  switchOn: {fileID: 0}
-  switchOff: {fileID: 0}
+  lightOn: {fileID: 451755436}
+  lightOff: {fileID: 1359893627}
+  switchOn: {fileID: 454404406}
+  switchOff: {fileID: 2016126491}
   toggle: 0
   switchSound: {fileID: 0}
 --- !u!1001 &2106321901
