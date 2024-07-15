@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class lightswitch : MonoBehaviour
+public class LightSwitch : MonoBehaviour
 {
     public GameObject intIcon, lightOn, lightOff, switchOn, switchOff;
     public bool toggle;
