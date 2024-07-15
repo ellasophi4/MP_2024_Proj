@@ -9,8 +9,18 @@ public class LightSwitch : MonoBehaviour
     public bool toggle;
     public AudioSource switchSound;
 
+
+    void OnTriggerEnter(Collider other){
+
+
+        Debug.Log("Enter");
+    }
+
     void OnTriggerStay(Collider other)
     {
+
+        Debug.Log("Stay");
+
         if (other.CompareTag("MainCamera"))
         {
             intIcon.SetActive(true);
@@ -37,6 +47,8 @@ public class LightSwitch : MonoBehaviour
     }
     void OnTriggerExit(Collider other)
     {
+
+        Debug.Log("Exit");
         if (other.CompareTag("MainCamera"))
         {
             intIcon.SetActive(false);
