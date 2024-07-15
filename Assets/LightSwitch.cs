@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class LightSwitch : MonoBehaviour
 {
-    public GameObject intIcon, lightOn, lightOff, switchOn, switchOff;
+    public GameObject lightOn, lightOff, switchOn, switchOff;
     public bool toggle;
     public AudioSource switchSound;
 
@@ -26,7 +26,7 @@ public class LightSwitch : MonoBehaviour
 
               Debug.Log("CameraStay");
 
-            intIcon.SetActive(true);
+            //intIcon.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
                 if(toggle == true)
@@ -54,7 +54,7 @@ public class LightSwitch : MonoBehaviour
         Debug.Log("Exit");
         if (other.CompareTag("MainCamera"))
         {
-            intIcon.SetActive(false);
+            //intIcon.SetActive(false);
         }
     }
 }
