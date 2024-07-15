@@ -21,7 +21,7 @@ public class LightSwitch : MonoBehaviour
 
       
 
-        if (other.CompareTag("MainCamera"))
+        if (other.CompareTag("Player"))
         {
 
               Debug.Log("CameraStay");
