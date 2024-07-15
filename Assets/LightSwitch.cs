@@ -19,10 +19,13 @@ public class LightSwitch : MonoBehaviour
     void OnTriggerStay(Collider other)
     {
 
-        Debug.Log("Stay");
+      
 
         if (other.CompareTag("MainCamera"))
         {
+
+              Debug.Log("CameraStay");
+
             intIcon.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
