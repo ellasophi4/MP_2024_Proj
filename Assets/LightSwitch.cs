@@ -24,11 +24,12 @@ public class LightSwitch : MonoBehaviour
         if (other.CompareTag("Player"))
         {
 
-              Debug.Log("CameraStay");
+              
 
             //intIcon.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E))
             {
+            Debug.Log("E");
                 if(toggle == true)
                 {
                     lightOn.SetActive(true);
